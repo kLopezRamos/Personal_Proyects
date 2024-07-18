@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina central</title>
+    <style>
+      .botones-extras {
+        display: flex;
+        justify-content: center;
+      }
+      .div-para-boton-regresar {
+        display: block;
+      }
+      .porfavor-jala {
+        color: white;
+      }
+      .contenedor-general {
+        display: grid;
+        grid-template-columns: 600px 600px;
+        justify-content: center;
+        align-items: center;
+        column-gap: 40px;
+        row-gap: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .botones {
+        background: none;
+        border: rgb(53, 53, 53) 0.1rem solid;
+        font-weight: 600;
+        padding: 1rem;
+        border-radius: 2rem;
+        background: rgb(53, 53, 53);
+        color: white;
+      }
+      .botones:hover {
+        border: rgb(255, 255, 255) 0.1rem solid;
+        background: rgb(53, 53, 53);
+        color: white;
+        cursor: pointer;
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./estilos.css" />
+    <nav id="desktop-nav">
+      <div class="logo">Kimberley Lopez</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="./seccion-academica.html">Academico</a></li>
+          <li><a href="./seccion-profesional.html">Profesional</a></li>
+
+          <li>
+            <a href="./seccion-intereses.html">Intereses</a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/kimberley-l%C3%B3pez-92bb9827a/"
+              ><button class="principal-buttons">LinkedIn</button></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Kimberley Lopez</div>
+      <div class="hambuerger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#academico" onclick="toggleMenu()">Academico</a></li>
+          <li><a href="#intereses" onclick="toggleMenu()">Intereses</a></li>
+          <li><a href="#profesional" onclick="toggleMenu()">Profesional</a></li>
+          <li><a href="#linkedin" onclick="toggleMenu()">LinkedIn</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./imagenes-R/perfil 3.jfif" class="foto-perfil" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hola, mi nombre es</p>
+        <h1 class="title">Kimberley Lopez</h1>
+        <p class="section__text__p2">Estudiante de Ingenieria de Software</p>
+        <div class="btn-container">
+          <button class="btn btn-color-1">
+            <a href="/PIA/PIA.html" class="porfavor-jala">Menú de PIA</a>
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="./imagenes-R/linkedin.png" class="icon" />
+          <img src="./imagenes-R/instagram.png" class="icon" />
+          <img src="./imagenes-R/whatsapp.png" class="icon" />
+        </div>
+      </div>
+    </section>
+
+    <br /><br />
+  </body>
+</html>

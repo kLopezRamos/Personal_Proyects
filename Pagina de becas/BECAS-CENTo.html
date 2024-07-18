@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BECAS</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+      body {
+        background-color: rgb(255, 255, 255);
+        padding-bottom: 100px;
+        font-family: "Poppins", sans-serif;
+        background: url(./imagenes-becas/universidad-fondo.jpg);
+      }
+      p {
+        color: rgb(85, 85, 85);
+      }
+      .cuadros {
+        justify-content: center;
+        align-items: Center;
+        margin-top: 100px;
+      }
+
+      .CONTENEDOR2 {
+        border-style: none;
+        border-color: gray;
+        width: 300px;
+        box-shadow: 0 0 5px rgb(0, 0, 0);
+        background-color: white;
+        border-radius: 20px;
+      }
+      .foto {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        margin: 0px;
+        transition: transform 0.5s ease, filter 0.5s ease;
+
+      }
+      .contenedor-general {
+        padding: 6px;
+        padding-bottom: 11px;
+      }
+      .nombre {
+        margin: 0px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-size: 15px;
+      }
+      .imagen-amigos {
+        width: 25px;
+        height: 25px;
+        object-fit: cover;
+        border-radius: 13px;
+      }
+      .amigos {
+        margin: 0px;
+        margin-bottom: 4px;
+        color: rgb(100, 100, 100);
+        font-size: 13px;
+      }
+      .c1 {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .c2 {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      button {
+        color: white;
+        background-color: rgb(0, 0, 0);
+        border-style: none;
+        border-radius: 4px;
+        width: 100px;
+        padding: 8px;
+      }
+      .p1 {
+        background-color: pink;
+        width: 100%;
+        height: 100px;
+        padding-top: 60px;
+        padding-left: 100px;
+      }
+      img {
+        width: 100px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      .contenedor-boton,
+      .c2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .c2 {
+        margin-top: 5px;
+        height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      alert('Da un vistazo a las becas disponibles!');
+      // script.js
+document.addEventListener('DOMContentLoaded', (event) => {
+    const fotos = document.querySelectorAll('.foto');
+    
+    fotos.forEach((foto) => {
+        foto.addEventListener('mouseover', () => {
+            foto.style.transform = 'scale(1.2) rotate(15deg)';
+            foto.style.filter = 'brightness(1.2)';
+        });
+
+        foto.addEventListener('mouseout', () => {
+            foto.style.transform = 'scale(1) rotate(0deg)';
+            foto.style.filter = 'brightness(1)';
+        });
+    });
+});
+
+    </script>
+    <h1 align="CENTER">Tipos de becas</h1>
+<div>
+
+
+    <div
+      class="cuadros"
+      style="
+        display: grid;
+        grid-template-columns: 300px 300px;
+        column-gap: 30px;
+        align-items: center;
+        margin-top: 20px;
+      "
+    >
+      <div class="CONTENEDOR2">
+        <img class="foto" src="./imagenes-becas/becainterna.jpg" alt="" />
+        <div class="contenedor-general">
+          <div class="contenedor-nombre">
+            <p class="nombre" align="center">INTERNAS</p>
+          </div>
+          <div class="contenedor-amigos">
+            <div class="c2">
+              <p class="amigos">Se aplica un descuento</p>
+            </div>
+          </div>
+          <div class="contenedor-boton">
+            <button><a href="becas-internas-2.html">Más infromación</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="CONTENEDOR2">
+        <img class="foto" src="./imagenes-becas/becaexterna.jpg" alt="" />
+        <div class="contenedor-general">
+          <div class="contenedor-nombre">
+            <p class="nombre" align="center">EXTERNAS</p>
+          </div>
+          <div class="contenedor-amigos">
+            <div class="c2">
+              <p class="amigos">Se recibe un pago de tipo monetario</p>
+            </div>
+          </div>
+          <div class="contenedor-boton">
+            <button><a href="becas-externas-2.html">Más infromación</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <br /><br /><br /><br /><br />
+ 
+  </body>
+</html>

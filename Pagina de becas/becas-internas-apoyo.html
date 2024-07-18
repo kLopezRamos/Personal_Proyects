@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BECAS DE APOYO</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background: url(./imagenes-becas/fime2.jpg);
+      }
+
+      h3 {
+        color: rgb(74, 43, 43);
+      }
+      p,
+      li {
+        color: rgb(85, 85, 85);
+      }
+
+      .contenedor-general {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        height: 100vh;
+        gap: 40px;
+        height: 650px;
+      }
+
+      img {
+        width: 450px;
+        height: 250px;
+        box-shadow: 0 0 7px rgb(30, 29, 29);
+      }
+
+      .contenedor-cuadros {
+        display: flex;
+        gap: 20px;
+      }
+      .contenedor-cuadros .cuadro-1,
+      .contenedor-cuadros .cuadro-2 {
+        width: 250px;
+        height: 240px;
+        border-radius: 0px;
+        box-shadow: 0 0 7px rgb(30, 29, 29);
+        padding: 20px;
+        background-color: white;
+      }
+      .contenedor-texto {
+        width: 540px;
+        margin-top: 30px;
+        box-shadow: 0 0 7px rgb(30, 29, 29);
+        border-radius: 0px;
+        padding: 30px;
+        background-color: white;
+      }
+      .boton-regresar {
+        padding: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        border-style: none;
+        background-color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 15px;
+        box-shadow: 0 0 6px gray;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fondo-blanco">
+      <br /><br />
+      <p align="center">
+        Se proporciona un descuento en la boleta de pago mediante las
+        siguientes:
+      </p>
+      <h1 align="center">BECAS DE ESCASOS RESURSOS Y APOYO ECONOMICO</h1>
+      <div class="contenedor-general">
+        <div class="contenedor-imagen">
+          <img src="./imagenes-becas/beca-apoyo-eco.png" alt="" />
+        </div>
+
+        <div class="contenedor-cuadros-texto">
+          <div class="contenedor-cuadros">
+            <div class="cuadro-1">
+              <h3>Para reingreso</h3>
+              <p>
+                Las becas de escasos recursos (rectoría) se otorgan a aquellos
+                alumnos que provengan de familias cuyo ingreso total no exceda
+                del mondo de cinco salarios mínimos. Requisitos Principales:
+              </p>
+            </div>
+            <div class="cuadro-2">
+              <h3>Beca de apoyo económico</h3>
+              <p>
+                Para aquellos estudiantes que comprueben su falta de recursos
+                económicos, cuenten con avance académico y que obtuvieron beca
+                por parte de rectoría con la clave 01, 02, 25 ó 75 para el
+                periodo a cursar.
+              </p>
+            </div>
+          </div>
+
+          <div class="contenedor-texto">
+            <h3>Requisitos:</h3>
+
+            <ol>
+              <li>
+                Contar con beca aplicada de Escasos Recursos en Rectoría con las
+                claves 01, 02, 25 o 75.
+              </li>
+              <li>
+                Tener buen aprovechamiento académico (menos de 2 materias
+                pendientes) en el semestre Enero-Junio 2023.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <button class="boton-regresar">
+        <a href="becas-internas-2.html">Regresar</a>
+      </button>
+      <button class="boton-regresar" align="right">
+        <a href="BECAS-CENTo.html">Regresar a INICIO</a>
+      </button>
+    </div>
+  </body>
+</html>

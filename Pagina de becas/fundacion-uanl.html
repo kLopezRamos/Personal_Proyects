@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FUNDACION UANL</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background: url(./imagenes-becas/universidad-fondo.jpg);
+      }
+
+      h3 {
+        color: rgb(74, 43, 43);
+      }
+      p,
+      li {
+        color: rgb(60, 60, 60);
+      }
+
+      .contenedor-general {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        height: 100vh;
+        gap: 40px;
+        height: 850px;
+      }
+
+      img {
+        width: 450px;
+        height: 270px;
+        object-fit: cover;
+        box-shadow: 0 0 7px rgb(30, 29, 29);
+      }
+
+      .contenedor-cuadros,
+      .contenedor-cuadros-imagen {
+        display: flex;
+        gap: 20px;
+      }
+      .contenedor-cuadros-imagen {
+        justify-content: center;
+      }
+      .contenedor-cuadros .cuadro-1,
+      .contenedor-cuadros .cuadro-2 {
+        width: 250px;
+        height: 230px;
+        border-radius: 0px;
+        box-shadow: 0 0 7px rgb(30, 29, 29);
+        padding: 20px;
+        background-color: white;
+      }
+      .contenedor-texto {
+        width: 540px;
+        height: 410px;
+        margin-top: 30px;
+        box-shadow: 0 0 7px rgb(30, 29, 29);
+        border-radius: 0px;
+        padding: 40px;
+        background-color: white;
+      }
+      .boton-regresar {
+        padding: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        border-style: none;
+        background-color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 15px;
+        box-shadow: 0 0 6px gray;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      nombre = prompt("Ingresa tu nombre:");
+      alert(`${nombre} Animate irte de intercambio!`);
+    </script>
+    <div class="fondo-blanco">
+      <br /><br />
+      <p align="center">
+        Se puede aplicar para la siguiente beca proporcionada por:
+      </p>
+      <h1 align="center">FUNDACION UANL</h1>
+      <div class="contenedor-general">
+        <div class="contenedor-cuadros-texto">
+          <div class="contenedor-cuadros-imagen">
+            <img src="./imagenes-becas/uanl2.jpg" alt="" />
+          </div>
+
+          <div class="contenedor-texto">
+            <h3>Algunos criterios de selección:</h3>
+            <ul>
+              <li>
+                El desempeño académico histórico de los participantes de cada
+                Dependencia Académica, en términos de los resultados obtenidos
+                en sus programas de movilidad académica.
+              </li>
+              <li>
+                El no haber cometido faltas a la normatividad que hayan
+                requerido acciones disciplinarias, entre otros.
+              </li>
+              <li>Los méritos académicos del postulante seleccionado.</li>
+              <li>
+                La carga horaria que cursará el aspirante en el programa de
+                movilidad académica, considerando el balance entre unidades de
+                aprendizaje obligatorias y optativas.
+              </li>
+              <li>
+                El desempeño académico histórico de los participantes de cada
+                Dependencia Académica, en términos de los resultados obtenidos
+                en sus programas de movilidad académica.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contenedor-cuadros-texto">
+          <div class="contenedor-cuadros">
+            <div class="cuadro-1">
+              <h3>¿A quién va dirigida?</h3>
+              <p>
+                A través del programa de movilidad, los estudiantes de la UANL
+                tienen la oportunidad de continuar sus estudios en el
+                extranjero, mediante una estancia de un semestre a un año (según
+                sea el caso),
+              </p>
+            </div>
+            <div class="cuadro-2">
+              <h3>Apoyo proporcionado</h3>
+              <p>
+                Apoyo mensual que va de 400 a 600 USD al estudiante para
+                solventar gastos de sostenimiento durante su estancia académica
+                en el extranjero, la cual es de 1 semestre.
+              </p>
+            </div>
+          </div>
+
+          <div class="contenedor-texto">
+            <h3>Requisitos:</h3>
+            <ol>
+              <li>
+                Ser alumno regular y contar con un promedio mínimo de 85 y un
+                desempeño académico sobresaliente.
+              </li>
+              <li>
+                Haber seleccionado un número de créditos a cursar en la
+                institución receptora, equivalente al menos al 80% de la carga
+                horaria semestral establecida en su plan de estudios. (18
+                créditos min.)
+              </li>
+              <li>
+                En todos los casos, contar con el dominio de un idioma diferente
+                al español con al menos el Nivel A2. En los casos de
+                instituciones de habla no hispana, acreditar los requisitos de
+                idioma que establezca la institución receptora, lo cual deberá
+                ser al menos el nivel B2 de acuerdo con el Marco Común Europeo
+                de Referencia para las Lenguas (MCER).
+              </li>
+              <li>
+                Aplicar al estudio socioeconómico en el Departamento de Becas de
+                la UANL
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <button class="boton-regresar">
+        <a href="becas-externas-2.html">Regresar</a>
+      </button>
+      <button class="boton-regresar" align="right">
+        <a href="BECAS-CENTo.html">Regresar a INICIO</a>
+      </button>
+    </div>
+  </body>
+</html>

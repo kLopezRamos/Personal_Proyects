@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BECAS ACADEMICAS</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background: url(./imagenes-becas/fime2.jpg);
+      }
+
+      h3 {
+        color: rgb(74, 43, 43);
+      }
+      p,
+      li {
+        color: rgb(4, 4, 4);
+      }
+
+      .contenedor-general {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        height: 100vh;
+        gap: 40px;
+        height: 600px;
+      }
+
+      img {
+        width: 450px;
+        height: 300px;
+        object-fit: cover;
+        box-shadow: 0 0 7px rgb(30, 29, 29);
+      }
+
+      .contenedor-cuadros {
+        display: flex;
+        gap: 20px;
+      }
+      .contenedor-cuadros .cuadro-1,
+      .contenedor-cuadros .cuadro-2 {
+        width: 250px;
+        height: 150px;
+        border-radius: 0px;
+        box-shadow: 0 0 7px rgb(30, 29, 29);
+        padding: 20px;
+        background-color: white;
+      }
+      .contenedor-texto {
+        width: 540px;
+        margin-top: 30px;
+        box-shadow: 0 0 7px rgb(30, 29, 29);
+        border-radius: 0px;
+        padding: 30px;
+        background-color: white;
+      }
+      .boton-regresar {
+        padding: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        border-style: none;
+        background-color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 15px;
+        box-shadow: 0 0 6px gray;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .nosotros {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fondo-blanco">
+      <br /><br />
+      <p align="center">Se puede aplicar para las siguientes:</p>
+      <h1 align="center">BECAS ACADEMICAS EN FIME</h1>
+      <div class="contenedor-general">
+        <div class="contenedor-imagen">
+          <img src="./imagenes-becas/imagen-beca-academica.jpg" alt="" />
+        </div>
+
+        <div class="contenedor-cuadros-texto">
+          <div class="contenedor-cuadros">
+            <div class="cuadro-1">
+              <h3>Alto promedio</h3>
+              <p>
+                Promedio general (Kárdex) mayor o igual a 90 a partir del tercer
+                semestre ya cursado.
+              </p>
+            </div>
+            <div class="cuadro-2">
+              <h3>Beca-T</h3>
+              <p>
+                Ser alumno de 5° semestre a cursar y contar con todas las
+                materias en Kárdex en primera oportunidad o máximo 2 extras.
+              </p>
+            </div>
+          </div>
+
+          <div class="contenedor-texto">
+            <h3>Como hacer la solicitud:</h3>
+            <p>Enviar correo a: fimebecat@gmail.com Asunto: Matrícula</p>
+            <p>Cuerpo de correo:</p>
+            <ol>
+              <li>Nombre</li>
+              <li>Matricula</li>
+              <li>Tipo de Beca a Solicitar</li>
+            </ol>
+            <p>
+              Adjuntar en un mismo PDF el aviso de pago, kárdex, del SIASE y
+              oficio del reconocimiento al Mérito Académico (en caso de
+              aplicar).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <button class="boton-regresar">
+        <a href="becas-internas-2.html">Regresar</a>
+      </button>
+      <button class="boton-regresar" align="right">
+        <a href="BECAS-CENTo.html">Regresar a INICIO</a>
+      </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BECALOS</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        background: url(./imagenes-becas/fondo-becas-externas.jpg);
+      }
+
+      h3 {
+        color: rgb(74, 43, 43);
+      }
+      p,
+      li {
+        color: rgb(85, 85, 85);
+      }
+
+      .contenedor-general {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        height: 100vh;
+        gap: 40px;
+        height: 650px;
+      }
+
+      img {
+        width: 450px;
+        height: 300px;
+        object-fit: cover;
+        box-shadow: 0 0 7px rgb(30, 29, 29);
+      }
+
+      .contenedor-cuadros {
+        display: flex;
+        gap: 20px;
+      }
+      .contenedor-cuadros .cuadro-1,
+      .contenedor-cuadros .cuadro-2 {
+        width: 250px;
+        height: 230px;
+        border-radius: 0px;
+        box-shadow: 0 0 7px rgb(30, 29, 29);
+        padding: 20px;
+        background-color: white;
+      }
+      .contenedor-texto {
+        width: 540px;
+        margin-top: 30px;
+        box-shadow: 0 0 7px rgb(30, 29, 29);
+        border-radius: 0px;
+        padding: 30px;
+        background-color: white;
+      }
+      .boton-regresar {
+        padding: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        border-style: none;
+        background-color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 15px;
+        box-shadow: 0 0 6px gray;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fondo-blanco">
+      <br /><br />
+      <p align="center">
+        Se puede aplicar para la siguiente beca proporcionada por el programa:
+      </p>
+      <h1 align="center">BECALOS</h1>
+      <div class="contenedor-general">
+        <div class="contenedor-imagen">
+          <img src="./imagenes-becas/becalos-2.jpg" alt="" />
+        </div>
+
+        <div class="contenedor-cuadros-texto">
+          <div class="contenedor-cuadros">
+            <div class="cuadro-1">
+              <h3>¿A quién va dirigida?</h3>
+              <p>
+                Convoca a estudiantes que se encuentren inscritos en una
+                institución pública de educación media superior o superior, a
+                postularse para la obtención de una beca para el ciclo escolar
+                completo de un año.
+              </p>
+            </div>
+            <div class="cuadro-2">
+              <h3>Apoyo proporcionado</h3>
+              <p>
+                El monto de la beca será de $1,000.00 (Mil pesos 00/100 MXN)
+                mensuales durante el ciclo escolar completo, con un máximo de 12
+                meses conforme al plan de estudios.
+              </p>
+            </div>
+          </div>
+
+          <div class="contenedor-texto">
+            <h3>Como hacer la solicitud:</h3>
+            <ol>
+              <li>
+                Provenir de familias cuyo ingreso sea igual o menor a cuatro
+                salarios mínimos mensuales equivalentes a $20,744.4 pesos
+                mexicanos. (Se considerará el salario mínimo general vigente a
+                partir del 1° de enero de 2022).
+              </li>
+              <li>
+                No contar con algún otro beneficio otorgado para su educación al
+                momento de solicitar la beca y durante el tiempo en que la
+                reciba.
+              </li>
+              <li>
+                No haber concluido estudios de nivel superior, ni contar con
+                título profesional de ese nivel educativo.
+              </li>
+              <li>Ser alumno regular.</li>
+              <li>Promedio escolar superior a 8.5 (en escala del 0 a 10).</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <button class="boton-regresar">
+        <a href="becas-externas-2.html">Regresar</a>
+      </button>
+      <button class="boton-regresar" align="right">
+        <a href="BECAS-CENTo.html">Regresar a INICIO</a>
+      </button>
+    </div>
+  </body>
+</html>

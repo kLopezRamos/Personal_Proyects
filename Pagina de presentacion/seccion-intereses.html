@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INTERESES</title>
+  </head>
+  <body>
+    <script>
+      alert(`Un vistazo a mis intereses!`);
+      // script.js
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const imagenes = document.querySelectorAll(".animarImagen");
+
+        imagenes.forEach((imagen) => {
+          imagen.addEventListener("mouseover", () => {
+            imagen.style.transform = "scale(1.2) rotate(15deg)";
+            imagen.style.filter = "brightness(1.2)";
+          });
+
+          imagen.addEventListener("mouseout", () => {
+            imagen.style.transform = "scale(1) rotate(0deg)";
+            imagen.style.filter = "brightness(1)";
+          });
+        });
+      });
+    </script>
+    <link rel="stylesheet" href="./estilos.css" />
+    <section id="projects">
+      <p class="section__text__p1">A cerca de mis</p>
+      <h1 class="title">Intereses</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./imagenes-R/int4.jfif"
+                class="animarImagen"
+                id="miImagen"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Gimnasio</h2>
+            <div class="btn-container"></div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./imagenes-R/int3.jpeg"
+                class="animarImagen"
+                id="miImagen"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Senderismo</h2>
+            <div class="btn-container"></div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./imagenes-R/int5.jpg"
+                class="animarImagen"
+                id="miImagen"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Gimnasia rítmica</h2>
+            <div class="btn-container"></div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./imagenes-R/int6.jfif"
+                class="animarImagen"
+                id="miImagen"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Danza</h2>
+            <div class="btn-container"></div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./imagenes-R/int7.jpg"
+                class="animarImagen"
+                id="miImagen"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Tarea</h2>
+            <div class="btn-container"></div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./imagenes-R/int8.jfif"
+                class="animarImagen"
+                id="miImagen"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Pasear en el parque
+            </h2>
+            <div class="btn-container"></div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./imagenes-R/int9.jpg"
+                class="animarImagen"
+                id="miImagen"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Ver series</h2>
+            <div class="btn-container"></div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./imagenes-R/int10.png"
+                class="animarImagen"
+                id="miImagen"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Leer artículos</h2>
+            <div class="btn-container"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br /><br /><br /><br />
+    <br /><br /><br /><br />
+    <br /><br /><br /><br />
+    <br /><br /><br /><br />
+    <br /><br /><br /><br />
+    <br /><br /><br /><br />
+
+    <button class="boton-regresar">
+      <a href="about-me.html">Regresar</a>
+    </button>
+  </body>
+</html>
