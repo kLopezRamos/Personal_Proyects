@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="estilos-fumigaciones.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const fotos = document.querySelectorAll(".foto");
+
+        fotos.forEach((foto) => {
+          foto.addEventListener("mouseover", () => {
+            foto.style.transform = "scale(1.2) rotate(15deg)";
+            foto.style.filter = "brightness(1.2)";
+          });
+
+          foto.addEventListener("mouseout", () => {
+            foto.style.transform = "scale(1) rotate(0deg)";
+            foto.style.filter = "brightness(1)";
+          });
+        });
+      });
+    </script>
+    <section id="intro" class="intro">
+      <nav id="desktop-nav">
+        <div class="logo">
+          <div class="rovi"><img src="./imagenes/logo-rovi.png" alt="" /></div>
+          <div class="texto">
+            <p>Fumigaciones Ramos</p>
+          </div>
+        </div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#intro">Inicio</a></li>
+            <li>
+              <a href="#nosotros">Nosotros</a>
+            </li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li>
+              <a href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <section class="imagen">
+      <img class="portada" src="./imagenes/fumigacion.jpg" alt="" />
+    </section>
+    <section id="nosotros" class="nosotros">
+      <br /><br />
+      <div class="titulo">
+        <h1 align="center">Nuestro objetivo</h1>
+      </div>
+      <div class="contenedor-general">
+        <div class="contenedor-imagen">
+          <img src="./imagenes/fumigacion-2.jpg" alt="" />
+        </div>
+
+        <div class="contenedor-cuadros-texto">
+          <div class="contenedor-cuadros">
+            <div class="cuadro-1">
+              <h3 align="center">Nos respaldan 20 años</h3>
+            </div>
+            <div class="cuadro-1">
+              <h3 align="center">Calidad y confianzas</h3>
+            </div>
+          </div>
+
+          <div class="contenedor-texto">
+            <h3 align="center">Mision y Visión</h3>
+            <p align="center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+              nesciunt sequi neque nam deleniti libero est dolore a! Aspernatur
+              odit voluptatem doloribus mollitia necessitatibus dicta facilis ut
+              at vero quod.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="servicios" class="servicios">
+      <div class="titulo">
+        <h1 align="center">Nuestros servicios</h1>
+      </div>
+      <div
+        class="cuadros"
+        style="
+          display: grid;
+          grid-template-columns: 300px 300px 300px 300px;
+          column-gap: 30px;
+          row-gap: 30px;
+          align-items: center;
+          margin-top: 20px;
+        "
+      >
+        <div style="background-color: white; height: 400px" class="tipo-plaga">
+          <div class="imagen-plaga">
+            <img class="foto" src="./imagenes/insectos rastreros.jpg" alt="" />
+          </div>
+          <div class="contenedor-nombre">
+            <p class="nombre" align="center">Insecto rastrero</p>
+          </div>
+        </div>
+        <div style="background-color: white; height: 400px" class="tipo-plaga">
+          <div class="imagen-plaga">
+            <img class="foto" src="./imagenes/arañas.jpg" alt="" />
+          </div>
+          <div class="contenedor-nombre">
+            <p class="nombre" align="center">Arañas</p>
+          </div>
+        </div>
+        <div style="background-color: white; height: 400px" class="tipo-plaga">
+          <div class="imagen-plaga">
+            <img class="foto" src="./imagenes/hormigas.jpg" alt="" />
+          </div>
+          <div class="contenedor-nombre">
+            <p class="nombre" align="center">Hormigas</p>
+          </div>
+        </div>
+        <div style="background-color: white; height: 400px" class="tipo-plaga">
+          <div class="imagen-plaga">
+            <img class="foto" src="./imagenes/cucarachas.png" alt="" />
+          </div>
+          <div class="contenedor-nombre">
+            <p class="nombre" align="center">Cucarachas</p>
+          </div>
+        </div>
+        <div style="background-color: white; height: 400px" class="tipo-plaga">
+          <div class="imagen-plaga">
+            <img class="foto" src="./imagenes/tarantulas.jpg" alt="" />
+          </div>
+          <div class="contenedor-nombre">
+            <p class="nombre" align="center">Tarántulas</p>
+          </div>
+        </div>
+        <div style="background-color: white; height: 400px" class="tipo-plaga">
+          <div class="imagen-plaga">
+            <img class="foto" src="./imagenes/alacranes.jpg" alt="" />
+          </div>
+          <div class="contenedor-nombre">
+            <p class="nombre" align="center">Alacranes</p>
+          </div>
+        </div>
+        <div style="background-color: white; height: 400px" class="tipo-plaga">
+          <div class="imagen-plaga">
+            <img class="foto" src="./imagenes/cienpies.jpg" alt="" />
+          </div>
+          <div class="contenedor-nombre">
+            <p class="nombre" align="center">Cienpiés</p>
+          </div>
+        </div>
+        <div style="background-color: white; height: 400px" class="tipo-plaga">
+          <div class="imagen-plaga">
+            <img class="foto" src="./imagenes/roedores.jpeg" alt="" />
+          </div>
+          <div class="contenedor-nombre">
+            <p class="nombre" align="center">Roedores (Rata y ratón)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contacto" class="contacto">
+      <div class="titulo">
+        <h1 align="center">Contacto</h1>
+      </div>
+      <div
+        class="contacto-contenedor"
+        style="
+          display: grid;
+          grid-template-columns: 300px 300px 300px;
+          column-gap: 30px;
+          row-gap: 30px;
+          height: 200px;
+        "
+      >
+        <div class="direccion">
+          <div class="redes-sociales">
+            <img src="./imagenes/direccion.png" alt="" />
+            <h3>Nos ubicamos en</h3>
+          </div>
+          <p>Av. del Estado, Tecnológico, 64700 Monterrey, N.L.</p>
+        </div>
+        <div class="email">
+          <h3>Email</h3>
+          <div class="redes-sociales">
+            <img src="./imagenes/email.png" alt="" />
+            <p>fumigacionesramos@gmail.com</p>
+          </div>
+          <br />
+          <h3>Redes sociales</h3>
+          <div class="redes-sociales">
+            <img src="./imagenes/instagram.png" alt="" />
+            <p>Instagram</p>
+          </div>
+          <div class="redes-sociales">
+            <img src="./imagenes/facebook.png" alt="" />
+            <p>Facebook</p>
+          </div>
+        </div>
+        <div class="telefono">
+          <div class="redes-sociales">
+            <img src="./imagenes/telefono.png" alt="" />
+            <h3>Llama a</h3>
+          </div>
+
+          <p>8112406169</p>
+
+          <p>+52 81 1261 3921</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

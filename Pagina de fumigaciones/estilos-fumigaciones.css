@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+body {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+p {
+  margin: 0px;
+}
+.intro {
+  box-sizing: border-box;
+  background-color: rgb(8, 8, 8);
+  height: 15vh;
+}
+.imagen {
+  box-sizing: border-box;
+  height: 85vh;
+}
+.nosotros p {
+  color: gray;
+}
+.servicios p {
+  color: gray;
+}
+
+.portada {
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra completamente el contenedor */
+  object-position: center; /* Centra la imagen en el contenedor */
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: url(./imagenes-becas/fime2.jpg);
+}
+
+h3 {
+  color: rgb(74, 43, 43);
+}
+p,
+li {
+  color: rgb(0, 0, 0);
+}
+
+/*dekstop-nav*/
+.logo .rovi img {
+  box-shadow: none;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 6px;
+}
+#desktop-nav {
+  display: flex; /* Asegura que el nav use flexbox */
+  align-items: center; /* Alinea verticalmente los elementos al centro */
+  height: 17vh;
+  padding: 0 2rem; /* Añade padding a los lados */
+}
+.logo {
+  display: flex; /* Flexbox en el logo para alinear contenido interno */
+  align-items: center; /* Alinea verticalmente el contenido del logo */
+}
+.rovi,
+.texto {
+  display: inline-block;
+  align-items: center;
+}
+
+nav,
+.nav-links {
+  display: flex;
+}
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rdg(181, 181, 181);
+}
+.logo {
+  font-size: 2rem;
+}
+.logo:hover {
+  cursor: default;
+}
+
+/*seccion nosotros---------------------------------------------------------------*/
+
+.nosotros {
+  background-color: pink;
+  box-sizing: border-box;
+  height: 100vh;
+}
+.nosotros,
+.intro {
+  background-color: rgb(255, 255, 255);
+}
+h3 {
+  color: rgb(255, 255, 255);
+}
+p,
+li {
+  color: rgb(4, 4, 4);
+}
+
+.contenedor-general {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  gap: 40px;
+  height: 500px;
+}
+
+img {
+  width: 500px;
+  height: 425px;
+  object-fit: cover;
+  box-shadow: 0 0 7px rgb(0, 0, 0);
+}
+
+.contenedor-cuadros {
+  display: flex;
+  gap: 20px;
+}
+.contenedor-cuadros .cuadro-1,
+.contenedor-cuadros .cuadro-2 {
+  width: 300px;
+  height: 150px;
+  border-radius: 0px;
+  box-shadow: 0 0 7px gray;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+}
+.contenedor-texto {
+  width: 622px;
+  margin-top: 30px;
+  border-radius: 0px;
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+}
+.contenedor-texto p {
+  color: rgb(0, 0, 0);
+  margin-top: 5px;
+}
+.contenedor-texto h3 {
+  color: rgb(0, 0, 0);
+}
+.boton-regresar {
+  padding: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-style: none;
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 0 0 6px gray;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.contenedor-cuadros-texto .cuadro-1 {
+  display: flex;
+  justify-content: center; /* Alineación horizontal */
+  align-items: center;
+}
+/*nav para que siga visualizandose*/
+nav {
+  position: fixed; /* Hace que el nav sea fijo */
+  top: 0; /* Fija el nav al top */
+  width: 100%; /* Hace que el nav ocupe el 100% del ancho */
+  background-color: white; /* Color de fondo del nav */
+  color: white;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade sombra para destacar */
+  z-index: 1000; /* Asegura que el nav esté por encima de otros elementos */
+  height: 20%;
+}
+.titulo h1 {
+  border-top-style: none;
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-bottom-color: rgb(149, 142, 142);
+  padding-bottom: 40px;
+  width: 700px;
+  display: block;
+}
+
+.nosotros .titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*seccion servicios-------------------------------------------------------------------------*/
+.servicios {
+  box-sizing: border-box;
+  height: 180vh;
+  padding-top: 20px;
+}
+.cuadros {
+  justify-content: center;
+  align-items: Center;
+  margin-top: 100px;
+}
+.tipo-plaga {
+  box-sizing: border-box;
+  padding: 40px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(149, 142, 142);
+}
+.imagen-plaga {
+  height: 80%;
+}
+.foto {
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+.nombre {
+  margin: 0px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 15px;
+  display: block;
+  color: black;
+}
+.contenedor-nombre {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.servicios h1 {
+  color: black;
+  margin-bottom: 50px;
+}
+.tipo-plaga p {
+  color: black;
+  font-size: 20px;
+  padding-top: 20px;
+}
+.titulo h1 {
+  border-top-style: none;
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-bottom-color: rgb(149, 142, 142);
+  padding-bottom: 40px;
+  width: 700px;
+  display: block;
+}
+
+.servicios .titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*Seccion contacto--------------------------------------------*/
+.contacto {
+  box-sizing: border-box;
+  height: 65vh;
+  background-color: #e7dc66;
+}
+.contacto-contenedor {
+  justify-content: center;
+  align-items: Center;
+  padding-top: 40px;
+}
+.contacto .titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+.direccion,
+.email,
+.telefono {
+  height: 95%;
+  border-right-style: solid;
+  border-width: 2px;
+  border-color: rgb(149, 142, 142);
+}
+.contacto h3 {
+  color: black;
+}
+/*Redes SOCIALES*/
+.redes-sociales {
+  display: flex;
+  align-items: center;
+}
+.redes-sociales img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  margin-right: 5px;
+  box-shadow: none;
+}
+.telefono .redes-sociales {
+  margin-bottom: 5px;
+}
